@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 5%;
+  background: #f6f4f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 3vw;
+  color: rgb(30, 29, 29);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+}
+.navbar a {
+  font-size: 2vw;
+  color: rgb(12, 12, 12);
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 3vw;
+  transition: transform 0.3s;
+}
+
+.navbar a:hover {
+  color: #0ef;
+}
+
+.img {
+  margin-top: 90px;
+  height: auto;
+  max-width: 100%;
+}
+
+.img1 {
+  margin-top: 10px;
+  height: auto;
+  width: 100%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card {
+  text-align: center;
+  margin: 0 10px;
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* threee card img */
+.card1-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  width: 25%; /* Adjust as needed for spacing */
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  margin: 0 60px;
+}
+
+.card1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card1-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card1 {
+    width: 50%;
+  }
+}
+
+.container1 {
+  text-align: center;
+  margin: 60px;
+}
+
+.p {
+  font: italic small-caps bold 50px/30px Georgia, serif;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .container1 {
+    margin: 30px; /* Adjust margin for smaller screens */
+  }
+
+  .p {
+    font-size: 30px; /* Adjust font size for smaller screens */
+    line-height: 20px; /* Adjust line height for smaller screens */
+  }
+}
